@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idea Gráfica | Impresión y Diseño</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 1.Encabezado y Menú-->
+     <header> 
+        <a href="#">
+            <img src="img/logo.png" alt="Logo de Idea Gráfica" width="80">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#trabajos">Trabajos</a></li> 
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+     </header>
+     <!-- 2.Contenido Principal -->
+     <main>
+        <!-- Seccion de Portada-->
+         <section id="Inicio" class="hero">
+            <h1>Impresión y Diseño gráfico a medida</h1>
+            <p>Creamos stickers, pines, lonas, y material gráfico personalizado para potenciar tu marca o proyecto.</p>
+            <a href="#contacto" class="btn-principal">Pedir presupuesto</a>
+         </section>
+
+         <!--Seccion de Servicios-->
+            <section id="servicios" class="servicios">
+                <h2>Nuestros Servicios</h2>
+
+                <div class="servicios-grid">
+                 <article class="tarjeta">
+                    <h3>Stickers personalizados</h3>
+                    <p>Troquelados, en vinilo resistente al agua y con acabados mate o brillante. Ideales para emprendimientos y eventos</p>
+                 </article>
+
+                 <article class="tarjeta">
+                    <h3>Pines publicitarios</h3>
+                    <p>Pines metálicos con alfiler de alta calidad en distintos tamaños. Perfectos para marketing, bandas o campañas.</p>
+                 </article>
+
+                 <article class="tarjeta">
+                    <h3>Lonas y Carteleria</h3>
+                    <p>Impresión en gran formato de alta definición para frentes de locales, eventos y promociones.</p>
+                 </article>
+                </div>          
+            </section>
+            <!--Seccion de Trabajos-->
+            <section id="trabajos" class="trabajos">
+                <h2>Galeria de trabajos</h2>
+                <p class="subtitulo-seccion">Algunos de los proyectos entregados a emprendimientos y eventos.</p>
+
+                <div class="galeria-grid">
+                    <figure class="item-galeria">
+                        <img src="img/trabajos/trabajo1.webp" alt="Stickers troquelados personalizados">
+                        <figcaption>stickers en vinilo troquelados</figcaption>
+                    </figure>
+
+                    <figure class="item-galeria">
+                        <img src="img/trabajos/trabajo2.webp" alt="Pines metálicos publicitarios">
+                        <figcaption>Pines metálicos 55mm</figcaption>
+                    </figure>
+
+                    <figure class="item-galeria">
+                        <img src="img/trabajos/trabajo3.webp" alt="Lona impresa formato">
+                        <figcaption>Lona frontlight para local comercial</figcaption>
+                    </figure>
+                </div>
+            </section>
+     </main>
+
+     <!-- 3.Pie de página -->
+      <footer id="contacto" class="footer">
+        <div class="footer-contenido">
+            <h2>¿Tenés una idea en mente? Nosotros la hacemos realidad.</h2>
+            <p>Escribinos por WhatsApp o Instagram con las medidas y cantidades que necesitás y te pasamos el presupuesto en el día.</p>
+
+            <a href="https://wa.me/5493516344139?text=Hola%20Idea%20Gr%C3%A1fica!%20Quisiera%20pedir%20un%20presupuesto."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-whatsapp">
+            Enviar WhatsApp
+            </a>
+
+            <div class="footer-info">
+                <p>Córdoba, Argentina</p>
+                <p>Instagram: <a href="https://www.instagram.com/idea_grafica_ar?utm_source=ig_web_button_share_sheet&rpxt=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">@ideagrafica</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-copy">
+            <p>&copy; 2026 Idea Gráfica. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+      <!-- 4. MODAL / VISOR DE IMÁGENES (Oculto por defecto) -->
+    <div id="visor-modal" class="modal">
+        <span id="cerrar-modal" class="cerrar">&times;</span>
+        <img id="imagen-ampliada" class="modal-contenido" src="" alt="">
+        <p id="texto-ampliado" class="modal-texto"></p>
+    </div>
+
+    <!-- Enlace al archivo JavaScript (siempre al final del body) -->
+    <script src="js/main.js"></script>
+</body>
+</body>
+</html>
